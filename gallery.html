@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Gallery | Prestige Pool Care | Swimming Pool Projects Vereeniging</title>
+    <meta name="description" content="View our portfolio of swimming pool projects in Vereeniging including new construction, renovations, decking, and maintenance work.">
+    <meta name="keywords" content="pool gallery vereeniging, pool projects, swimming pool photos, pool construction photos, pool renovation before after">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+<!-- Header -->
+<header id="header">
+    <div class="container header-container">
+        <div class="logo">
+            <a href="index.html">
+                <div class="logo-img">
+                    <!-- Replace with your custom logo -->
+                    <img src="/prestige pool.png" alt="Prestige Pool Care Logo" style="height: 50px; width: auto;">
+                </div>
+                <div class="logo-text"></div>
+            </a>
+        </div>
+        <button class="mobile-menu-btn">
+            <i class="fas fa-bars"></i>
+        </button>
+        <nav id="nav">
+            <ul>
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="tel:+27723700825" class="call-btn"><i class="fas fa-phone"></i> +27 72 370 0825</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Our Gallery</h1>
+            <p>Browse through our completed projects and see the quality of our work</p>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="gallery">
+        <div class="container">
+            <div class="gallery-filters">
+                <button class="filter-btn active" data-filter="all">All Projects</button>
+                <button class="filter-btn" data-filter="construction">New Construction</button>
+                <button class="filter-btn" data-filter="renovation">Renovations</button>
+                <button class="filter-btn" data-filter="decking">Decking</button>
+                <button class="filter-btn" data-filter="maintenance">Maintenance</button>
+            </div>
+
+            <div class="gallery-grid">
+                <!-- Project 1 -->
+                <div class="gallery-item fade-in" data-category="construction">
+                    <img src="/fiberglass-pools-500x500.jpg" alt="Modern Fiberglass Pool">
+                    <div class="gallery-overlay">
+                        <h3>Modern Fiberglass Pool</h3>
+                        <p>Vereeniging Residence</p>
+                        <button class="btn-view" onclick="openModal('/fiberglass-pools-500x500.jpg')">View Project</button>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="gallery-item fade-in" data-category="renovation">
+                    <img src="/01_Pool-Lining-Surface-cracks.jpg" alt="Pool Renovation">
+                    <div class="gallery-overlay">
+                        <h3>Complete Pool Renovation</h3>
+                        <p>Bedworth Park Project</p>
+                        <button class="btn-view" onclick="openModal('/01_Pool-Lining-Surface-cracks.jpg')">View Project</button>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="gallery-item fade-in" data-category="decking">
+                    <img src="https://images.unsplash.com/photo-1576013551627-0cc20b96c2a7?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Pool Decking">
+                    <div class="gallery-overlay">
+                        <h3>Wooden Pool Decking</h3>
+                        <p>Vereeniging Home</p>
+                        <button class="btn-view" onclick="openModal('https://images.unsplash.com/photo-1576013551627-0cc20b96c2a7?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80')">View Project</button>
+                    </div>
+                </div>
+
+                <!-- Project 4 -->
+                <div class="gallery-item fade-in" data-category="construction">
+                    <img src="/family-fun-endless-pools-swimming.jpg" alt="Family Pool">
+                    <div class="gallery-overlay">
+                        <h3>Family Swimming Pool</h3>
+                        <p>Vereeniging Residence</p>
+                        <button class="btn-view" onclick="openModal('/family-fun-endless-pools-swimming.jpg')">View Project</button>
+                    </div>
+                </div>
+
+                <!-- Project 5 -->
+                <div class="gallery-item fade-in" data-category="renovation">
+                    <img src="/BoomSwim-resort-pool-585.jpg" alt="Pool with Boomers">
+                    <div class="gallery-overlay">
+                        <h3>Pool with Safety Boomers</h3>
+                        <p>Family Safety Project</p>
+                        <button class="btn-view" onclick="openModal('/BoomSwim-resort-pool-585.jpg')">View Project</button>
+                    </div>
+                </div>
+
+                <!-- Project 6 -->
+                <div class="gallery-item fade-in" data-category="maintenance">
+                    <img src="/GettyImages-1134506282.jpg" alt="Pool Cleaning">
+                    <div class="gallery-overlay">
+                        <h3>Professional Pool Cleaning</h3>
+                        <p>Maintenance Service</p>
+                        <button class="btn-view" onclick="openModal('/GettyImages-1134506282.jpg')">View Project</button>
+                    </div>
+                </div>
+
+                <!-- Project 7 -->
+                <div class="gallery-item fade-in" data-category="construction">
+                    <img src="https://images.unsplash.com/photo-1575429198097-0414ec08e8cd?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Luxury Pool">
+                    <div class="gallery-overlay">
+                        <h3>Luxury Infinity Pool</h3>
+                        <p>High-end Residence</p>
+                        <button class="btn-view" onclick="openModal('https://images.unsplash.com/photo-1575429198097-0414ec08e8cd?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80')">View Project</button>
+                    </div>
+                </div>
+
+                <!-- Project 8 -->
+                <div class="gallery-item fade-in" data-category="decking">
+                    <img src="/a9f290208f75ce4d3a1ef3404b692c42.jpg" alt="Stone Decking">
+                    <div class="gallery-overlay">
+                        <h3>Natural Stone Decking</h3>
+                        <p>Premium Finish Project</p>
+                        <button class="btn-view" onclick="openModal('/a9f290208f75ce4d3a1ef3404b692c42.jpg')">View Project</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal for image viewing -->
+    <div id="imageModal" class="modal">
+        <span class="close-modal">&times;</span>
+        <img class="modal-content" id="modalImage">
+        <div class="modal-caption"></div>
+    </div>
+
+    <!-- CTA Section -->
+    <section class="cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Inspired by Our Work?</h2>
+                <p>Let us create your dream pool</p>
+                <a href="contact.html" class="btn">Start Your Project</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-container">
+                <div class="footer-about">
+                    <div class="footer-logo">Prestige Pool Care</div>
+                    <p>Professional swimming pool services in Vereeniging and surrounding areas. Your trusted partner for all pool care needs.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-services">
+                    <h3>Our Services</h3>
+                    <ul>
+                        <li><a href="services.html#construction">Pool Construction</a></li>
+                        <li><a href="services.html#renovation">Pool Renovation</a></li>
+                        <li><a href="services.html#heatpumps">Heat Pumps</a></li>
+                        <li><a href="services.html#cleaning">Pool Cleaning</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-contact">
+                    <h3>Contact Info</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> 07 Galatea Bedworthpark, Vereeniging</p>
+                    <p><i class="fas fa-phone"></i> +27 72 370 0825</p>
+                    <p><i class="fas fa-envelope"></i> Tinosmahori80@gmail.com</p>
+                    <p><i class="fas fa-clock"></i> Mon-Fri: 8am - 6pm</p>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2023 Prestige Pool Care. All Rights Reserved. | Powered by <a href="https://vibrantws.co.za" target="_blank">vibrantws.co.za</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Float Button -->
+    <a href="https://wa.me/27723700825?text=Hi%20Prestige%20Pool%20Care,%20I'm%20interested%20in%20your%20services" class="whatsapp-float" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <script src="script.js"></script>
+</body>
+</html>
